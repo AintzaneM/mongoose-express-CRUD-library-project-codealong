@@ -1,0 +1,41 @@
+Step 0: Initial setup
+Step 1: seed file
+
+Step 2: READ: display a list
+
+
+-X Create a route (Get “/books”)
+
+-X Make a request to the DB-->Book.find
+
+-X Create a view (and passing data from the DB)
+
+
+
+Step 3: (READ)Task: have a page with details of each individual booklist
+
+-X link to acces that route(add link to each book)
+
+-Xcreate view('book-details.hbs)
+
+-Xroute for the view (GET"'/books/:id")
+
+-XMake request to the DB Book.findByID
+
+
+Step 4 (CREATE) funcionality to create new books
+
+-Step 4.a: display a form to create new books
+    -X Add link in homepage(create a new book in homepage) -->/books/create --> display form
+
+    -X Create route GET/books/create
+
+    -X Create a view(book-create.hbs) we are going to render a view
+
+
+-Step 4.b: receive the information from the form and save in DB
+    -X Get the details of the form and save it to the DB
+    -X receive the information form the form: creating a route for that POST /books/create
+    -X MAke a request save the information to a new book Book.create()
+    -X After book is created we will redirect to /books (we don't need to create an additional view)
+
