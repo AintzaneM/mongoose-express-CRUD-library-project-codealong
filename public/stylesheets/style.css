@@ -22,3 +22,7 @@ label, input, textarea {
   display: block;
   margin: 1rem 0;
 }
+
+form {
+  margin: 1rem auto;
+}

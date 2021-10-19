@@ -39,3 +39,17 @@ Step 4 (CREATE) funcionality to create new books
     -X MAke a request save the information to a new book Book.create()
     -X After book is created we will redirect to /books (we don't need to create an additional view)
 
+
+
+step 5 (UPDATE functionality)
+
+-Step 5.a display a form to update a book
+    -X add link
+    -X create a route get books/:bookID/edit
+    -X Make a request to the DB-->boof.findByID()
+    -X Create a view (book-edit.hbs)
+
+-step 5.b receive the information from the form and save in DB
+    -
+
+
